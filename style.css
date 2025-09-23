@@ -17,23 +17,32 @@
 /* Gallery */
 .gallery-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
+  /* width: 450px;
+    height: 300px;
+    object-fit: cover; */
 }
 
 @media (min-width: 800px) {
   .gallery-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 .gallery-item {
+  width: 450px;
+  height: 300px;
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid rgba(148, 163, 184, 0.15);
 }
 
+
 .gallery-item img {
+  width: 450px;
+  height: 300px;
+  object-fit: cover;
   aspect-ratio: 4/3;
   object-fit: cover;
   transition: transform 0.3s ease;
@@ -71,6 +80,7 @@
   border-radius: 999px;
   margin: 0 auto 8px;
   object-fit: cover;
+  object-position: top;
 }
 
 .person h3 {
@@ -572,16 +582,22 @@ ul.bullets li {
 .btn:hover, .btn:focus {
   background: var(--primary-dark);
   color: #fff;
+  text-decoration: none;
 }
 
-.btn-outline {
+.btn-explore {
   background: transparent;
   color: var(--primary);
   border: 2px solid var(--primary);
   box-shadow: none;
+  text-decoration: none;
 }
 
-.btn-outline:hover, .btn-outline:focus {
+.btn-join{
+  text-decoration: none;
+}
+
+.btn-explore:hover, .btn-explore:focus {
   background: var(--primary);
   color: #fff;
 }
@@ -803,4 +819,3 @@ ul.bullets li {
   clip: rect(0,0,0,0);
   border: 0;
 }
-
