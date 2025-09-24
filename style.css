@@ -19,6 +19,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
+  overflow-y: auto;
+  max-height: 650px;
+  padding-right: 5px;
   /* width: 450px;
     height: 300px;
     object-fit: cover; */
@@ -31,11 +34,13 @@
 }
 
 .gallery-item {
+  position: relative;
   width: 450px;
   height: 300px;
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid rgba(148, 163, 184, 0.15);
+  cursor: pointer;
 }
 
 
@@ -45,12 +50,15 @@
   object-fit: cover;
   aspect-ratio: 4/3;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
 }
 
 .gallery-item:hover img {
-  transform: scale(1.04);
+  
+  transform: scale(1.1);
+
 }
+
 
 /* Team */
 .team-grid {
