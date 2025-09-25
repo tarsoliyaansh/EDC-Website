@@ -20,7 +20,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
   overflow-y: auto;
-  max-height: 300px;
+  max-height: 420px;
   padding-right: 5px;
   /* width: 450px;
     height: 300px;
@@ -99,6 +99,47 @@
   margin: 0;
   color: var(--muted);
 }
+
+
+/* Directors  */
+/* .team-grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+@media (min-width: 900px) {
+  .team-grid2 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.person {
+  background: var(--bg-elev);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 16px;
+  padding: 14px;
+  text-align: center;
+}
+
+.person img {
+  width: 100%;
+  max-width: 120px;
+  height: 120px;
+  border-radius: 999px;
+  margin: 0 auto 8px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.person h3 {
+  margin: 6px 0;
+}
+
+.person p {
+  margin: 0;
+  color: var(--muted);
+} */
 
 /* Sponsors */
 .sponsor-strip {
@@ -335,6 +376,12 @@ a:hover, a:focus {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/* .container2 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+} */
 
 /** Header */
 .site-header {
